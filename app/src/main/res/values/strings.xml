@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Modified_unit_converter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="let_s_begin">Let\'s Begin</string>
+    <string name="kg_to_pound">Kg to pound</string>
+    <string name="celsius_to_kelvin">celsius to kelvin</string>
+    <string name="meter_to_feet">meter to feet</string>
+    <string name="kg_to_gram">Kg to Gram</string>
+</resources>

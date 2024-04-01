@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeScreen">
+    <fragment
+        android:id="@+id/celciusToKelvin"
+        android:name="com.example.modified_unit_converter.CelciusToKelvin"
+        android:label="fragment_celcius_to_kelvin"
+        tools:layout="@layout/fragment_celcius_to_kelvin" >
+        <action
+            android:id="@+id/action_celciusToKelvin_to_homeScreen3"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/kgToPound"
+        android:name="com.example.modified_unit_converter.KgToPound"
+        android:label="fragment_kg_to_pound"
+        tools:layout="@layout/fragment_kg_to_pound" >
+        <action
+            android:id="@+id/action_kgToPound_to_homeScreen3"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/kgToGram"
+        android:name="com.example.modified_unit_converter.KgToGram"
+        android:label="fragment_kg_to_gram"
+        tools:layout="@layout/fragment_kg_to_gram" >
+        <action
+            android:id="@+id/action_kgToGram_to_homeScreen3"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/meterToFeet"
+        android:name="com.example.modified_unit_converter.MeterToFeet"
+        android:label="fragment_meter_to_feet"
+        tools:layout="@layout/fragment_meter_to_feet" >
+        <action
+            android:id="@+id/action_meterToFeet_to_homeScreen3"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.modified_unit_converter.HomeScreen"
+        android:label="HomeScreen" >
+        <action
+            android:id="@+id/action_homeScreen3_to_meterToFeet"
+            app:destination="@id/meterToFeet" />
+        <action
+            android:id="@+id/action_homeScreen3_to_celciusToKelvin"
+            app:destination="@id/celciusToKelvin" />
+        <action
+            android:id="@+id/action_homeScreen3_to_kgToGram"
+            app:destination="@id/kgToGram" />
+        <action
+            android:id="@+id/action_homeScreen3_to_kgToPound"
+            app:destination="@id/kgToPound" />
+    </fragment>
+</navigation>

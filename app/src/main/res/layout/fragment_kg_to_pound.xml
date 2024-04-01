@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".KgToPound">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Kg To Pound"
+        android:textColor="@color/green"
+        android:textSize="50sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/input_pound"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:layout_margin="100dp"
+        android:hint="Enter number"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textColorHint="@color/white">
+
+    </EditText>
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Result"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="30sp"/>
+
+    <Button
+        android:id="@+id/convert_pound"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/button"
+        android:text="Convert">
+
+    </Button>
+
+
+</LinearLayout>
